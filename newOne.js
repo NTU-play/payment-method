@@ -14,3 +14,12 @@ document.addEventListener('click', () => {
       }
     }
 });
+
+let done = document.querySelector('.done');
+let thanks = document.querySelector('#thanks');
+
+done.addEventListener('click', () => {
+
+  thanks.style.display = "block";
+  done.style.display = 'none';
+});

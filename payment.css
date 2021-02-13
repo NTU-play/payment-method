@@ -212,6 +212,14 @@ div p {
   color: white;
   transform: rotateY(180deg);
 }
+
+/* thanks */
+#thanks {
+  display: none;
+}
+
+
+
 /* media query */
 @media (min-width: 1000px) {
 
