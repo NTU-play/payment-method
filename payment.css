@@ -1,0 +1,299 @@
+body {
+  background-image: url("Putrajaya.jpg");
+  background-attachment: fixed;
+}
+
+hr {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.container2 {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 2fr 50px;
+  grid-template-columns: 1fr;
+  grid-gap: 5px;
+  grid-template-areas:
+  'header'
+  'disclaimer'
+  'footer';
+}
+
+
+.item1 {
+  grid-area: header;
+}
+
+.disclaimer {
+  grid-area: disclaimer;
+}
+
+.main-footer {
+  grid-area: footer;
+}
+
+.logoAndHeader {
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.description {
+  padding: 40px;
+  font-size: 120px;
+}
+
+h1 {
+  margin: 0px;
+  margin-left: 30px;
+}
+
+h2 {
+  font-size: 100px;
+  font-family: "Yusei+Magic", sans-serif;
+  font-weight: bold;
+}
+
+ /*navigation */
+.item1 {
+  text-align: center;
+  background-color: #b3ffb3;
+}
+.navbar {
+     box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+ }
+
+ .navbar {
+     font-size: 50px;
+     background-image: linear-gradient(260deg, #2376ae 0%, #004d4d 100%);
+     border: 1px solid rgba(0, 0, 0, 0.2);
+     padding-bottom: 10px;
+ }
+
+ .main-nav a:hover {
+    color: #004d4d;
+ }
+
+ .main-nav {
+     list-style-type: none;
+     display: none;
+ }
+
+.nav-links {
+    font-size: 50px;
+}
+
+ .nav-links,
+ .nav-menu {
+     text-decoration: none;
+     color: rgba(255, 255, 255, 0.7);
+ }
+
+ .main-nav li {
+     text-align: center;
+     margin: 5px auto;
+ }
+
+ .nav-menu {
+     display: inline-block;
+     font-size: 50px;
+ }
+
+ .navbar-toggle {
+     cursor: pointer;
+     color: rgba(255, 255, 255, 0.8);
+     font-size: 50px;
+     padding: 20px 300px 20px 300px;
+ }
+
+ .active {
+     display: block;
+ }
+
+header h1 {
+  font-size: 200px;
+  font-family: 'Anton', sans-serif;
+}
+
+div p {
+  font-family: 'Sriracha', cursive;
+}
+
+/* disclaimer section */
+.disclaimer {
+  background-color: white;
+  opacity: 70%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 70%;
+  padding: 20px;
+  text-align: center;
+  padding: 50px;
+}
+
+.disclaimer h2 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.disclaimer h5 {
+  font-size: 30px;
+}
+
+.disclaimer ul li {
+  font-size: 20px;
+}
+
+/* footer elements */
+.main-footer {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-around;
+  height: 25px;
+  background-color:  #b3ffb3;
+  padding:20px;
+  position: static;
+  left: 0;
+  bottom: 0;
+}
+
+.instaLogo p {
+  font-size: 20px;
+  display:inline;
+  font-family: 'Architects Daughter', cursive;
+}
+
+/* card */
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 100%;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+/* media query */
+@media (min-width: 1000px) {
+
+/* font size */
+  .item h2 {
+    font-size: 40px;
+  }
+
+  .item p {
+    font-size: 20px;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .nav-menu,
+  .nav-links {
+    font-size: 20px;
+  }
+
+.navbar {
+   display: flex;
+   justify-content: center;
+   padding-bottom: 0;
+   height: 50px;
+   align-items: center;
+}
+
+.main-nav {
+   display: flex;
+   margin-right: 30px;
+   flex-direction: row;
+   justify-content: flex-end;
+}
+
+.main-nav li {
+   margin: 0;
+}
+
+
+.nav-links {
+   margin-left: 40px;
+   padding: 23px 30px 3px 30px;
+}
+
+.nav-menu {
+   margin-top: 0;
+}
+
+.navbar-toggle {
+   display: none;
+}
+
+.nav-links:hover {
+   color: rgba(255, 255, 255, 1);
+   background-color: #00cccc;
+}
+
+  .item1 p {
+    font-size: 50px;
+  }
+
+  .container2 {
+    grid-template-rows: 1fr 2fr 50px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    'header'
+    'disclaimer'
+    'footer';
+  }
+
+  .item {
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    display: flex;
+    flex-direction: column;
+    max-height: 500px;
+  }
+
+  .flip-card {
+    display: inline-block;
+  }
+}
