@@ -1,11 +1,23 @@
 body {
-  background-image: url("Putrajaya.jpg");
+  background-color: #BEE5BF;
   background-attachment: fixed;
 }
 
 hr {
   margin-bottom: 0px;
   margin-top: 0px;
+}
+
+.goBack {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.qr_code {
+  height: 40%;
+  width: 40%;
+  margin-top: 20px;
 }
 
 .container2 {
@@ -56,27 +68,28 @@ h2 {
 }
 
  /*navigation */
-.item1 {
-  text-align: center;
-  background-color: #b3ffb3;
-}
-.navbar {
-     box-sizing: border-box;
-     padding: 0;
-     margin: 0;
+ .item1 {
+   text-align: center;
+   background-color: #1E3F20;
+   color: white;
  }
-
  .navbar {
-     font-size: 50px;
-     background-image: linear-gradient(260deg, #2376ae 0%, #004d4d 100%);
-     border: 1px solid rgba(0, 0, 0, 0.2);
-     padding-bottom: 10px;
- }
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+  }
 
- .main-nav a:hover {
-    color: #004d4d;
- }
+  .navbar {
+      font-size: 50px;
+      background-color: #4A7856;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      padding-bottom: 10px;
+  }
 
+  .main-nav a:hover {
+     color: white;
+     background-color: #345830;
+  }
  .main-nav {
      list-style-type: none;
      display: none;
@@ -154,7 +167,7 @@ div p {
   display: flex;
   justify-content: space-around;
   height: 25px;
-  background-color:  #b3ffb3;
+  background-color:  #345830;
   padding:20px;
   position: static;
   left: 0;
@@ -165,7 +178,17 @@ div p {
   font-size: 20px;
   display:inline;
   font-family: 'Architects Daughter', cursive;
+  color: #6eeb34;
 }
+
+.instaLogo a i {
+  color: white;
+}
+
+.main-footer span{
+  color: #6eeb34;
+}
+
 
 /* card */
 
@@ -284,6 +307,8 @@ div p {
   }
 
   .container2 {
+    max-width: 1280px;
+    max-height: 720px;
     grid-template-rows: 1fr 2fr 50px;
     grid-template-columns: 1fr;
     grid-template-areas:
